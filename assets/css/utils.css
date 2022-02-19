@@ -1,8 +1,8 @@
 :root {
 	--primary-color: #031100;
-   --secondary-color: crimson;
-	--white-color: #FFFFFF;
-   --light-gray-color: #EEEEEE;
+	--secondary-color: crimson;
+	--white-color: #ffffff;
+	--light-gray-color: #eeeeee;
 	--gap: 3rem;
 }
 
@@ -15,6 +15,7 @@
 
 .white-bg {
 	background: var(--white-color);
+	color: var(--primary-color);
 }
 
 .main-content {
