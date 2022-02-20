@@ -1,6 +1,5 @@
 .home-content {
 	position: relative;
-	/* top: -8rem; */
 	display: grid;
 	grid-template-columns: 1fr 1.5fr;
 	gap: var(--gap);
@@ -22,7 +21,8 @@
 .top3-content {
 	max-width: 64rem;
 	display: flex;
-	flex-flow: column wrap;
+	flex-direction: column;
+	flex-wrap: nowrap;
 	justify-content: center;
 	min-height: 100vh;
 	text-align: center;
@@ -254,10 +254,5 @@ body .full-width {
 
 	.menu-spacing {
 		display: none;
-	}
-
-	h1,
-	h2 {
-		width: 100%;
 	}
 }
