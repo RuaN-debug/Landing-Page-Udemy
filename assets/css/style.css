@@ -24,7 +24,7 @@
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
-	height: 100vh;
+	min-height: 100vh;
 	text-align: center;
 }
 
@@ -159,4 +159,24 @@ body .full-width {
 .footer p {
 	margin: 0;
 	padding: 2.1rem;
+}
+
+@media (max-width: 50rem){
+	.home-content, .grid {
+		grid-template-columns: 1fr;
+	}
+
+	.gallery-img {
+		width: 100%;
+		max-width: 100%;
+		min-width: 100%;
+	}
+
+	.gallery-img img {
+		width: 100%;
+	}
+
+	.grid-one-content {
+		display: block;
+	}
 }
