@@ -72,11 +72,11 @@
 .gallery-img {
 	width: 100%;
 	max-width: 36rem;
-	max-height: 36rem;
+	max-height: 28rem;
 	overflow: hidden;
 }
 
-.gallery-img  img {
+.gallery-img img {
 	transition: all 300ms ease-in-out;
 }
 
@@ -85,6 +85,7 @@
 }
 
 .contact-form {
+	margin-top: 7rem;
 	grid-column: span 2;
 }
 
@@ -97,7 +98,7 @@
 
 .form-grid legend {
 	font-style: italic;
-	font-size: 1.6rem;
+	font-size: 3rem;
 	margin-bottom: 3rem;
 }
 
@@ -110,7 +111,8 @@
 	margin-bottom: 1rem;
 }
 
-.form-group input, textarea {
+.form-group input,
+textarea {
 	border: none;
 	background: var(--white-color);
 	padding: 1.5rem 2rem;
@@ -119,7 +121,8 @@
 	outline: none;
 }
 
-.form-group input:focus, textarea:focus {
+.form-group input:focus,
+textarea:focus {
 	box-shadow: 0 0 0.8rem 0.2rem var(--light-gray-color);
 }
 
@@ -133,13 +136,13 @@ body .full-width {
 	background: none;
 	color: var(--white-color);
 	padding: 1.5rem 2rem;
-	font-size: 3rem;
+	font-size: 2rem;
 	cursor: pointer;
 	transition: all 300ms ease-in-out;
 }
 
 .form-group button:hover {
-	background: var(--white-color);;
+	background: var(--white-color);
 	color: var(--primary-color);
 }
 
@@ -181,8 +184,9 @@ body .full-width {
 	border: 0.1rem solid var(--primary-color);
 }
 
-@media (max-width: 50rem){
-	.home-content, .grid {
+@media (max-width: 50rem) {
+	.home-content,
+	.grid {
 		grid-template-columns: 1fr;
 	}
 
@@ -200,6 +204,10 @@ body .full-width {
 		display: block;
 	}
 
+	.contact-form .form-grid {
+		margin-top: -11rem;
+	}
+
 	.menu {
 		bottom: 0;
 		text-align: center;
@@ -209,7 +217,8 @@ body .full-width {
 		height: 100vh;
 	}
 
-	.menu-content, .menu-content ul {
+	.menu-content,
+	.menu-content ul {
 		flex-direction: column;
 		justify-content: center;
 	}
@@ -235,11 +244,11 @@ body .full-width {
 		cursor: pointer;
 	}
 
-	.close-menu:checked~.menu {
+	.close-menu:checked ~ .menu {
 		display: block;
 	}
 
-	.close-menu:checked~.close-menu-label::after {
+	.close-menu:checked ~ .close-menu-label::after {
 		content: "×";
 	}
 
@@ -247,7 +256,8 @@ body .full-width {
 		display: none;
 	}
 
-	h1, h2 {
+	h1,
+	h2 {
 		width: 100%;
 	}
 }
